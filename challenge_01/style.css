@@ -16,6 +16,10 @@ img {
     margin-right: auto;
     width: 30%;
     transition: transform 0.3s ease;
+}
+
+.linux{
+    min-width: 400px;
 
 }
 ul {
