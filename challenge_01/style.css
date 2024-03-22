@@ -15,9 +15,15 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+    transition: transform 0.3s ease;
+
+}
+ul {
+    padding-right: 40px;
 }
 
 ul > li{
+    display: block;
     font-size: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     list-style-type: none;
@@ -26,18 +32,18 @@ ul > li{
     border: 7px solid rgb(65, 64, 64);
     border-radius: 15px;
     padding: 20px;
+
     margin-bottom: 15px;
-    margin-right: 200px;
-    margin-left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+
+    max-width: 700px;
+    min-width: 70px;
     
-}
-/*make some thing when hover*/
-ul > li:hover {
-    background-color: rgba(65, 64, 64, 0.413);
-    color: white;
-    padding: 28px;
+    transition: all 0.4s ease-in-out;
 
 }
+
 
 .git{
     display:flex;
@@ -46,3 +52,21 @@ ul > li:hover {
 
 }
 
+
+/*=====================================*/
+
+
+
+ul > li:hover {
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+    transform: scale(1.1);
+    background-color: #f0f8ff;
+    color: orange; 
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/*==================*/
