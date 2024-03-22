@@ -1,2 +1,2 @@
-# Web dev Bootcamp
-challenges from infobrains web dev bootcamp
+# Web_dev_bootcamp
+Infobrains web development bootcamp

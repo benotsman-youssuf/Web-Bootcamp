@@ -1,0 +1,47 @@
+img {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+
+    margin-top: 100px;
+    border-radius: 25px;
+    
+}
+
+body{
+    background:   hsl(212, 45%, 89%);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 550px;
+    height: 760px;
+
+    background-color: #ffffffac;
+    border-radius: 25px;
+    
+
+}
+
+.git{
+    display:flex;
+    width: 100px;
+    margin-top: 200px;
+
+}
