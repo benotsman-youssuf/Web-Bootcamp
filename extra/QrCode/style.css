@@ -4,9 +4,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 500px;
-
-    margin-top: 100px;
-    border-radius: 25px;
+    border-radius: 35px;
     
 }
 
@@ -29,13 +27,15 @@ div {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
 
     width: 550px;
     height: 760px;
 
     background-color: #ffffffac;
-    border-radius: 25px;
-    
+    border-radius: 35px;
+
+    padding-top: 30px;
 
 }
 
