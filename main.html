@@ -3,25 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Web Development Challenges</title>
     <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f7f2e8;
+        color: #3b3b3b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        padding: 40px;
+        background-color: #fff9e6;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #896c4b;
+      }
+
       ol {
-        font-size: 30px;
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 20px;
+      }
+
+      a {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #b58d68;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: background-color 0.3s ease;
+        font-size: 18px;
+      }
+
+      a:hover {
+        background-color: #a37c5b;
       }
     </style>
   </head>
   <body>
-    <h1>all web dev challenges</h1>
-    <ol>
-      <li>
-        <a href="./challenge_01/index.html">challenge 01</a>
-      </li>
-    </ol>
-    <h1>Some extra projects</h1>
-    <ol>
-        <li>
-            <a href="./extra/QrCode/index.html">Qr code card</a>
-        </li>
-    </ol>
+    <div class="container">
+      <h1>All Web Dev Challenges</h1>
+      <ol>
+        <li><a href="./challenge_01/index.html">Challenge 01</a></li>
+      </ol>
+      <h1>Some Extra Projects</h1>
+      <ol>
+        <li><a href="./extra/QrCode/index.html">QR Code Card</a></li>
+      </ol>
+    </div>
   </body>
 </html>
