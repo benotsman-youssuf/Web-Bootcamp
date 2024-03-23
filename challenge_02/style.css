@@ -1,17 +1,16 @@
 
-
 img{
     width: 176px;
     padding :40px;
     border-radius: 50%;
-    transition: all 0.3s ease-in-out;
+    transition: transform 2s;
 }
 
 body{
     background:hsl(0, 0%, 8%);
 }
 
-div{
+.container{
     display: block;
     text-align: center;
     border: 3px solid hsl(0, 0%, 12%);
@@ -22,6 +21,7 @@ div{
     margin-top: 100px;
     margin-left:  auto;
     margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 ul{
@@ -38,7 +38,6 @@ li{
     font-size: 26px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
-    
 }
 
 h1,p,li{
@@ -68,6 +67,7 @@ li:hover{
 .discord:hover{
     background:hsl(235 86% 65%);
     border: hsl(235 86% 65%);
+
 }
 
 .linkedin:hover{
@@ -92,14 +92,44 @@ li:hover{
 
 /*=================*/
 
-
-img:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.05);
-}
-
-
-
-
-
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: hsl(0, 0%, 12%);
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  
+  /* Style the back side */
+  .flip-card-back {
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 12%);;
+    color: hsl(0, 0%, 12%);
+    transform: rotateY(180deg);
+  }
+  
 
