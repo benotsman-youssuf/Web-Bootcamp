@@ -1,0 +1,105 @@
+
+
+img{
+    width: 176px;
+    padding :40px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+body{
+    background:hsl(0, 0%, 8%);
+}
+
+div{
+    display: block;
+    text-align: center;
+    border: 3px solid hsl(0, 0%, 12%);
+    border-radius: 30px;
+    background: hsl(0, 0%, 12%);
+    width: 500px;
+    height: 965px;
+    margin-top: 100px;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+ul{
+    list-style-type: none;
+    padding-right: 40px;
+}
+
+li{
+    border: 3px solid hsl(0, 0%, 20%);
+    background: hsl(0, 0%, 20%);
+    border-radius: 15px;
+    padding:20px;
+    margin-bottom: 18px;
+    font-size: 26px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+h1,p,li{
+    font-family: 'inter';
+    color: white;
+}
+p{
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+h2{
+    font-family: 'inter';
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 45px;
+}
+
+li:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.discord:hover{
+    background:hsl(235 86% 65%);
+    border: hsl(235 86% 65%);
+}
+
+.linkedin:hover{
+    background:hsl(201, 100%, 35%);
+    border: hsl(201, 100%, 35%);
+}
+
+.facebook:hover{
+    background:hsl(214, 89%, 52%);
+    border: hsl(214, 89%, 52%);
+}
+
+.github:hover{
+    background:rgb(43,49,55);
+    border: rgb(43,49,55);
+}
+
+.youtube:hover{
+    background:red;
+    border:red ;
+}
+
+/*=================*/
+
+
+img:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
