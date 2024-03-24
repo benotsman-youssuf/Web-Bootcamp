@@ -7,7 +7,7 @@ img{
 }
 
 body{
-    background:tan;
+    background:hsla(0, 0%, 14%, 0.87);
 }
 
 .container{
@@ -149,7 +149,7 @@ h2{
 .container:hover  {
     transition: all 0.6s ease-in-out;
     transform:perspective(3500px) rotateY(10deg) scaleX(1.15) scaleY(1.1) ;
-    box-shadow: -15px 10px 30px 0 hsla(0, 0%, 0%, 0.284);
+    box-shadow: -15px 10px 30px 0 hsla(0, 0%, 0%, 0.59);
 }
 
 /*=====================================================*/
@@ -174,7 +174,23 @@ li:hover span {
   margin-left: -10px;
 }
 
+.flip-card-front:hover h1{
+  content: "hi";
+}
 
+
+#Gend{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+}
+
+.end{
+  text-align: center;
+  font-family: 'inter';
+  font-size: 40px;
+  font-weight: bolder;
+}
 
 
 
@@ -188,5 +204,4 @@ li:hover span {
   
 
   
- */
 
