@@ -7,25 +7,25 @@ img{
 }
 
 body{
-    background:hsl(0, 0%, 8%);
+    background:tan;
 }
 
 .container{
     display: block;
     text-align: center;
-    border: 3px solid hsl(0, 0%, 12%);
+    border: 3px solid hsla(0, 0%, 100%, 0);
     border-radius: 30px;
     background: hsl(0, 0%, 12%);
     width: 500px;
-    height: 955px;
+    height: 980px;
     margin-top: 100px;
     margin-left: auto ;
     margin-right: auto ;
     margin-bottom: 200px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 28px 6px rgba(0, 0, 0, 0.658);
     transition: all 0.6s ease-in-out;
-
     transform-style: preserve-3d;
+
 
 
 }
@@ -92,11 +92,11 @@ h2{
 
 }
 
-.youtube:hover{
+.stack:hover{
     transition: all 0.3s ease-in-out;
     transform: scale(1.1); 
-    background:rgba(255, 37, 37, 0.897);
-    box-shadow: -3px 5px 20px 0.5px hsla(0, 100%, 50%, 0.298);
+    background:rgba(255, 115, 0, 0.959);
+    box-shadow: -3px 5px 20px 0.5px hsla(20, 100%, 50%, 0.344);
 
 }
 
@@ -146,25 +146,47 @@ h2{
 
   /********/
  
-
-
-
-
-
-  
 .container:hover  {
     transition: all 0.6s ease-in-out;
-    transform:perspective(5000px) rotateY(10deg) scaleX(1.15) scaleY(1.1) ;
+    transform:perspective(3500px) rotateY(10deg) scaleX(1.15) scaleY(1.1) ;
     box-shadow: -15px 10px 30px 0 hsla(0, 0%, 0%, 0.284);
+}
+
+/*=====================================================*/
+
+i {
+  font-size: 30px;
+  transition: color 0.3s ease;
+  transition: margin-left 0.3s ease;
+  color: rgba(210, 180, 140, 0);
+}
+
+li:hover i {
+  margin-left: 20px;
+  color: white;
+}
+
+span {
+  transition: margin-left 0.3s ease;
+}
+
+li:hover span {
+  margin-left: -10px;
 }
 
 
 
-/*=====================================================*/
 
- 
+
+
+
+
+
+
+
+  
   
 
-
   
- 
+ */
+
