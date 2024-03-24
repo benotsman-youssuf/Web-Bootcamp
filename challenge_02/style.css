@@ -25,6 +25,9 @@ body{
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: all 0.6s ease-in-out;
 
+    transform-style: preserve-3d;
+
+
 }
 
 ul{
@@ -33,11 +36,10 @@ ul{
 }
 
 li{
-    border: 3px solid hsl(0, 0%, 20%);
     background: hsl(0, 0%, 20%);
     border-radius: 15px;
-    padding:20px;
-    margin-bottom: 18px;
+    padding:23px;
+    margin-bottom: 20px;
     font-size: 26px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -58,40 +60,46 @@ h2{
     margin-bottom: 45px;
 }
 
-li:hover{
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.05);
-    border-radius: 25px;
-    color: rgb(255, 255, 255);
-}
-
-
-
+/*social hover*/
 .discord:hover{
+    transition:all 0.3s ease-in;
+    transform: scale(1.1);
     background:hsl(235 86% 65%);
-    border: hsl(235 86% 65%);
-
+    box-shadow: -3px 5px 20px 0.5px hsla(235, 87%, 65%, 0.365);
 }
 
 .linkedin:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
     background:hsl(201, 100%, 35%);
-    border: hsl(201, 100%, 35%);
+    box-shadow: -3px 5px 20px 0.5px hsla(201, 100%, 35%, 0.439);
+
 }
 
 .facebook:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
     background:hsl(214, 89%, 52%);
-    border: hsl(214, 89%, 52%);
+    box-shadow: -3px 5px 20px 0.5px hsla(214, 89%, 52%, 0.442);
+
 }
 
 .github:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
     background:rgb(43,49,55);
-    border: rgb(43,49,55);
+    box-shadow: -3px 5px 20px 0.5px rgba(43, 49, 55, 0.463);
+
 }
 
 .youtube:hover{
-    background:red;
-    border:red ;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1); 
+    background:rgba(255, 37, 37, 0.897);
+    box-shadow: -3px 5px 20px 0.5px hsla(0, 100%, 50%, 0.298);
+
 }
+
 
 /*=================*/
 
@@ -146,8 +154,17 @@ li:hover{
   
 .container:hover  {
     transition: all 0.6s ease-in-out;
-    transform:perspective(1600px) rotateY(-10deg) scaleX(1.15) scaleY(1.1) ;
-    box-shadow: 5px 4px 30px 0 rgba(0, 0, 0, 0.596);
+    transform:perspective(5000px) rotateY(10deg) scaleX(1.15) scaleY(1.1) ;
+    box-shadow: -15px 10px 30px 0 hsla(0, 0%, 0%, 0.284);
 }
 
 
+
+/*=====================================================*/
+
+ 
+  
+
+
+  
+ 
