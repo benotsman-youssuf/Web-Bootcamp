@@ -17,11 +17,14 @@ body{
     border-radius: 30px;
     background: hsl(0, 0%, 12%);
     width: 500px;
-    height: 965px;
+    height: 955px;
     margin-top: 100px;
-    margin-left:  auto;
-    margin-right: auto;
+    margin-left: auto ;
+    margin-right: auto ;
+    margin-bottom: 200px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.6s ease-in-out;
+
 }
 
 ul{
@@ -131,5 +134,20 @@ li:hover{
     color: hsl(0, 0%, 12%);
     transform: rotateY(180deg);
   }
+
+
+  /********/
+ 
+
+
+
+
+
   
+.container:hover  {
+    transition: all 0.6s ease-in-out;
+    transform:perspective(1600px) rotateY(-10deg) scaleX(1.15) scaleY(1.1) ;
+    box-shadow: 5px 4px 30px 0 rgba(0, 0, 0, 0.596);
+}
+
 
