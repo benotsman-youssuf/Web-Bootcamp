@@ -5,7 +5,8 @@
 
 
 body{
-    background: rgb(246, 226, 190);
+    background: rgb(153,193,178)
+    ;
 }
 
 #iphone{
@@ -271,3 +272,11 @@ i{
 
 
 
+/*******END**********/
+.Gend{
+    color: white;
+    text-align: center;
+    font-family: 'inter';
+    font-size: 40px;
+    font-weight: bolder;
+  }
