@@ -7,7 +7,7 @@ img{
 }
 
 body{
-    background:hsla(0, 0%, 14%, 0.87);
+    background:hsla(0, 0%, 13%, 0.708);
 }
 
 .container{
@@ -183,6 +183,7 @@ li:hover span {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 45px;
+
 }
 
 .end{
@@ -192,7 +193,12 @@ li:hover span {
   font-weight: bolder;
 }
 
+a{ 
+  text-decoration: none; 
+  color: transparent; 
+ }
 
+ 
 
 
 

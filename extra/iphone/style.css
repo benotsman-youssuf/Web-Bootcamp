@@ -1,0 +1,227 @@
+@font-face {
+    font-family:'gun' ;
+    src: url(./font/Gunplay_Regular.otf);
+}
+
+
+body{
+    background: rgb(246, 226, 190);
+}
+
+#iphone{
+
+    margin-top: 70px;
+    margin-left:  auto;
+    margin-right:  auto;
+    width: 428px;
+    height: 926px;
+
+    border: 14px solid rgb(0, 0, 0);
+    border-radius:80px;
+    width: 440px;
+    height: 942px;
+    background-image: url(./img/wallpaper.png);
+}
+#dynamic-island-container {
+    position: relative;
+    margin-top: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 125px;
+    height: 37px;
+    z-index: 1;
+}
+
+#dynamic-island{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000000;
+    border-radius: 50px;
+    width: 125px;
+    height: 37px;
+    display:block ;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+
+}
+
+#camera{
+    width: 37px;
+    height: 37px;
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    margin-left: 90px;
+} 
+
+/*=========================*/
+
+#notification-bar-ul{
+    display: flex;
+    list-style-type: none;
+}
+#notification-bar-ul>li{
+    padding: 5px;
+}
+
+#notification-bar{
+    margin-left: 270px;
+    margin-top: -47px;
+}
+
+
+/*=========================*/
+
+h1{
+    font-family: 'gun';
+    color: white;
+    text-align: center;
+    margin-top:1px;
+    font-size: 120px;
+}
+h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 80px;  
+}
+
+
+/*=========================*/
+
+#audio-player {
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 410px;
+  height: 100px;
+
+  background: hsla(200, 12%, 95%, 0.514);
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+audio {
+    width: 410px;
+    opacity: 0.514;
+    background: hsl(200, 12%, 95%);
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    transform: translateY(-63px);
+}
+
+audio::-webkit-media-controls-current-time-display {
+  visibility: hidden;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  visibility: hidden;
+}
+
+
+/*=========================*/
+
+#play-buttons{
+    list-style-type: none;
+    justify-content: right;
+    font-size: 25px;
+    display: flex;
+    margin-right: 20px;
+    transform: translateY(30px);
+}
+#play-buttons > li {
+  padding: 15px;
+}
+/*=========================*/
+
+img{
+    width: 100px;
+    background: rgba(255, 255, 255, 0.357);
+    border-radius: 25px; 
+
+    margin-left: -30px;
+    margin-top: 10px;
+    padding-right: 0px;
+}
+
+/*=========================*/
+#img-and-controls{
+    display: flex;
+    list-style-type: none;
+}
+
+/*=========================*/
+#end-phone {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-right: 30px;
+  transform: translateY(140px);
+}
+#end-phone>li{
+    padding: 120px;
+    font-size: 20px;
+}
+#cam{
+    transition: all 0.3s ease-in-out;
+}
+#flash{
+    transition: all 0.3s ease-in-out;
+}
+
+i{
+    color: white;
+}
+
+#endline{
+    border: 4px solid whitesmoke;
+    width: 200px;
+    border-radius: 100px;
+    margin-left: 120px;
+    transform: translateY(50px);
+    transition: all 0.3s ease-in-out;
+}
+/****************HOOOOOOOOOVER*******************/
+
+#cam:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+#flash:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+
+#audio-player:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+#dynamic-island:hover{
+    transition: all 0.4s ease-in-out;
+    background: #000000f2;
+    width: 410px;
+    height: 200px;
+    z-index: 20;
+
+}
+#dynamic-island:hover #camera {
+
+}
+
+
+
+
+
+
+
