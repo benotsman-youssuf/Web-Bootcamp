@@ -2,6 +2,10 @@
     font-family:'gun' ;
     src: url(./font/Gunplay_Regular.otf);
 }
+@font-face {
+    font-family: 'ru';
+    src: url(./font/ArefRuqaa-Bold.ttf);
+}
 
 
 body{
@@ -9,7 +13,7 @@ body{
     ;
 }
 
-#iphone{
+.iphone{
 
     margin-top: 70px;
     margin-left:  auto;
@@ -61,6 +65,22 @@ body{
     margin-left: 11px;
 }
 
+.socials{
+    font-size: 0px;
+    list-style-type: none;
+    margin-left: -10px;
+    width: 200px;
+    font-family: 'inter';
+
+    /* visibility: hidden; */
+    transition: all 0.4s ease-in-out;
+}
+
+.name{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
 .camera{
     width: 37px;
     height: 37px;
@@ -72,8 +92,7 @@ body{
 .infos{
     width: 37px;
     height: 37px;
-    opacity: 0.2;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.301);
     border-radius: 50px;
     transition: all 0.4s ease-in-out;
 }
@@ -249,23 +268,27 @@ i{
 }
 
 .dynamic-island:hover .infos{
-    transition: all 0.4s ease-in-out;
+    transition: all 0s ease-in-out;
     width: 180px;
     height: 180px;
     margin-top: 10px;
+    background: transparent;
 }
-.dynamic-island:hover .cam-infos>li{
-    transition: all 0.4s ease-in-out;
 
-    padding-left: 25px;
-}
 .dynamic-island:hover .cam-infos{
     transition: all 0.4s ease-in-out;
 
-    margin-left: -50px;
+    margin-left: -30px;
+}
+.dynamic-island:hover .socials{
+    transition: all 0.4s ease-in-out;
+    font-size: 16px;
+
+    visibility: visible;
+    margin-top: 40px;
+    color: white;
 }
 
-  
 
 
 
@@ -280,3 +303,5 @@ i{
     font-size: 40px;
     font-weight: bolder;
   }
+
+
