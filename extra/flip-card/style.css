@@ -1,0 +1,45 @@
+img{
+    width: 100%;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 320px;
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+    background: #ff0000;
+    color: #333;
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #55ff00;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+
+
+
+.card:hover{
+    transform: rotateY(180deg);
+}
