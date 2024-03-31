@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root{
+    --color-primary-Cyan: hsl(171, 66%, 44%);
+    --color-primry-blue: hsl(233, 100%, 69%);
+    --color-neutral-dark-grayish-blue: hsl(210, 10%, 33%);
+    --color-neutral-grayish-blue: hsl(201, 11%, 66%);
+
+    --font-family: 'Bai Jamjuree', sans-serif;
+    --font-size: 18px;
+    --font-weight-reg: 400px;
+    --font-weight-semi: 600;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.header{
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: cover;
+    height: 355px;
+
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+}
+.header img{
+    width: 143px;
+    height: 143px;
+    margin-top: 150px;
+}
+.header_txt{
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.header_txt h1 {
+    font-size: 52px;
+    font-weight: var(--font-weight-semi);
+    letter-spacing: -0.02em;
+    color: var(--color-neutral-dark-grayish-blue);
+    margin-bottom: 20px;
+}
+.header_txt p {
+    font-size: 23px;
+    font-weight: var(--font-weight-reg);
+    line-height: 1.5;
+    color: var(--color-neutral-grayish-blue);
+    margin-bottom: 20px;
+}
+
+
+
