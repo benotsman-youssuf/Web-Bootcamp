@@ -11,6 +11,7 @@
     --font-weight-semi: 600;
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -291,3 +292,75 @@
     gap: 20px;
     padding-left: 200px;
 }
+/* ======================RESPONSIVE====================== */
+
+@media (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+    .header_txt p {
+        width: 390px;
+    }
+    .download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .desktop img {
+        width: 400px;
+    }
+    .second-sec p {
+        width: 390px;
+    }
+    .characteristics {
+        align-items: center;
+        text-align: center;
+    }
+    .third-txt,
+    .third-txt p {
+        width: 400px;
+    }
+    .third-sec img {
+        width: 400px;
+    }
+    .fourth-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .fourth-sec p {
+        width: 400px;
+    }
+    .sixth-sec p {
+        width: 400px;
+    }
+    .companies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+    .footer {
+        height: 500px;
+    }
+    .footer-txt {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-actions {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .socials {
+        padding-left: 0;
+    }
+}
+
