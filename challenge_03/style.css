@@ -301,6 +301,11 @@
     body {
         overflow-x: hidden;
     }
+    .header_txt h1{
+        font-size: 40px;
+        width: 380px;
+        margin-left: 23px;
+    }
     .container h2 {
         font-size: 40px;   
     }
