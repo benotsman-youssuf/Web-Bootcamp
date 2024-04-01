@@ -231,6 +231,9 @@
     align-items: center;
     margin-bottom: 100px;
 }
+.companies>img{
+    width: 200px;
+}
 /* ----------------------   SIXTH SECTION---------------------- */
 .sixth-sec{
     text-align: center;
