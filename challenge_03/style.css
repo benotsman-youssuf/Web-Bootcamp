@@ -298,48 +298,48 @@
     body {
         overflow-x: hidden;
     }
-    .header_txt p {
-        width: 390px;
+    .container h2 {
+        font-size: 40px;   
+    }
+    .container p {
+        font-size: 19px;
+        width: 380px;
     }
     .download {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .download a{
+        width: 400px;
+        border-radius: 50px;
+        text-align: center;
+    }
     .desktop {
         display: flex;
         flex-direction: column;
+        margin-top: 50px ;
+        margin-left: 0px;
         align-items: center;
-        margin-left: 20px;
     }
     .desktop img {
-        width: 400px;
-    }
-    .second-sec p {
-        width: 390px;
+        width: 380px;
     }
     .characteristics {
         align-items: center;
         text-align: center;
     }
-    .third-txt,
-    .third-txt p {
-        width: 400px;
-    }
     .third-sec img {
-        width: 400px;
+        width: 380px;
+    }
+    .third-txt p{
+        padding-left: 30px;
     }
     .fourth-txt {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
-    }
-    .fourth-sec p {
-        width: 400px;
-    }
-    .sixth-sec p {
-        width: 400px;
     }
     .companies {
         display: flex;
