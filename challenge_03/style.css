@@ -297,9 +297,13 @@
 }
 /* ======================RESPONSIVE====================== */
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 450px)  {
     body {
         overflow-x: hidden;
+    }
+    .header img{
+        width: 150px;
+        height: 150px;
     }
     .header_txt h1{
         font-size: 40px;
@@ -307,7 +311,8 @@
         margin-left: 23px;
     }
     .container h2 {
-        font-size: 40px;   
+        font-size: 35px;   
+        width: 370px;
     }
     .container p {
         font-size: 19px;
@@ -319,7 +324,7 @@
         align-items: center;
     }
     .download a{
-        width: 400px;
+        width: 300px;
         border-radius: 50px;
         text-align: center;
     }
