@@ -286,7 +286,7 @@
     padding-left: 200px;
 }
 /* ======================RESPONSIVE====================== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
     body {
       overflow-x: hidden;
     }
@@ -309,7 +309,7 @@
     .container h2 {
       font-size: 35px;
     }
-    .container p {
+    .container> p {
       font-size: 19px;
       min-width: 300px;
     }
@@ -319,7 +319,7 @@
       align-items: center;
     }
     .download a {
-      width: 300px;
+      max-width: 300px;
       border-radius: 50px;
       text-align: center;
     }
