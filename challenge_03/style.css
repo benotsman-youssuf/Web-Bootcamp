@@ -4,14 +4,11 @@
     --color-primry-blue: hsl(233, 100%, 69%);
     --color-neutral-dark-grayish-blue: hsl(210, 10%, 33%);
     --color-neutral-grayish-blue: hsl(201, 11%, 66%);
-
     --font-family: 'Bai Jamjuree', sans-serif;
     --font-size: 18px;
     --font-weight-reg: 400;
     --font-weight-semi: 600;
 }
-
-
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +19,6 @@
     background-image: url(./images/bg-header-desktop.png);
     background-size: cover;
     height: 500px;
-
     display: flex;
     justify-content: center; /* Center items horizontally */
 }
@@ -31,21 +27,20 @@
     height: 170px;
     margin-top: 180px;
 }
-.header_txt{
+.header-txt{
     margin-top: -100px;
     font-family: var(--font-family);
     text-align: center;
 }
-
-.header_txt h1 {
+.header-txt h1 {
     font-size: 52px;
     font-weight: var(--font-weight-semi);
     letter-spacing: -0.02em;
     color: var(--color-neutral-dark-grayish-blue);
     margin-bottom: 20px;
 }
-.header_txt p {
-    width: 800px;
+.header-txt p {
+    max-width: 800px;
     font-size: 23px;
     font-weight: var(--font-weight-reg);
     line-height: 1.5;
@@ -83,9 +78,7 @@
 .mac:is(:hover, :focus){
     box-shadow: 0px 4px hsl(233, 64%, 59%) , 0px 10px 10px -5px hsl(233, 64%, 59%);
 }
-
 /* ----------------------SECOND SECTION---------------------- */
-
 .second-sec{
     font-family: var(--font-family);
     text-align: center;
@@ -99,7 +92,7 @@
     margin-bottom: 20px;
 }
 .second-sec p{
-    width: 800px;
+    max-width: 800px;
     font-size: 23px;
     font-weight: var(--font-weight-reg);
     line-height: 1.5;
@@ -126,7 +119,7 @@
 }
 .characteristics p{
     font-size: var(--font-size);
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 70px;
     line-height: 1.9;
 }
@@ -149,7 +142,6 @@
 }
 .third-txt{
     margin-top: 200px;
-
     text-align: center;
     margin-bottom: 150px;
     font-family: var(--font-family);
@@ -162,7 +154,7 @@
     margin-bottom: 20px;
 }
 .third-txt p{
-    width: 900px;
+    max-width: 900px;
     font-size: 23px;
     font-weight: var(--font-weight-reg);
     line-height: 1.5;
@@ -186,7 +178,7 @@
     margin-bottom: 20px;
 }
 .fourth-sec p{
-    width: 800px;
+    max-width: 800px;
     font-size: 23px;
     font-weight: var(--font-weight-reg);
     line-height: 1.5;
@@ -223,7 +215,6 @@
 .fourth-txt-1{
     margin-top: -4px;
 }
-
 /* ----------------------   FIFTH SECTION---------------------- */
 .companies{
     display: flex;
@@ -253,7 +244,7 @@
     margin-bottom: 20px;
 }
 .sixth-sec p {
-    width: 800px;
+    max-width: 800px;
     font-size: 23px;
     font-weight: var(--font-weight-reg);
     line-height: 1.5;
@@ -276,7 +267,6 @@
 .logo-footer{
     width: 70px;
     margin-top: 40px;
-
 }
 .footer-actions{
     margin-top: 35px;
@@ -296,84 +286,93 @@
     padding-left: 200px;
 }
 /* ======================RESPONSIVE====================== */
-
-@media screen and (max-width: 450px)  {
+@media screen and (max-width: 768px) {
     body {
-        overflow-x: hidden;
+      overflow-x: hidden;
     }
-    .header img{
-        width: 150px;
-        height: 150px;
+    .header img {
+      width: 150px;
+      height: 150px;
     }
-    .header_txt h1{
-        font-size: 40px;
-        width: 380px;
-        margin-left: 23px;
+    .header-txt h1 {
+      font-size: 40px;
+    }
+    .first-sec {
+      flex-direction: column;
+      align-items: center;
+    }
+    .second-sec {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     .container h2 {
-        font-size: 35px;   
-        width: 370px;
+      font-size: 35px;
     }
     .container p {
-        font-size: 19px;
-        width: 380px;
+      font-size: 19px;
+      min-width: 300px;
     }
     .download {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .download a{
-        width: 300px;
-        border-radius: 50px;
-        text-align: center;
+    .download a {
+      width: 300px;
+      border-radius: 50px;
+      text-align: center;
     }
     .desktop {
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px ;
-        margin-left: 0px;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-left: 0px;
+      align-items: center;
     }
     .desktop img {
-        width: 380px;
+      width: 330px;
     }
     .characteristics {
-        align-items: center;
-        text-align: center;
+      align-items: center;
+      text-align: center;
     }
     .third-sec img {
-        width: 380px;
+      width: 380px;
     }
-    .third-txt p{
-        padding-left: 30px;
+    .third-txt p {
+      padding-left: 30px;
     }
     .fourth-txt {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
     .companies {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 80px;
     }
     .footer {
-        height: 500px;
+      height: 500px;
     }
     .footer-txt {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
     .footer-actions {
-        flex-direction: column;
-        gap: 30px;
+      flex-direction: column;
+      gap: 30px;
     }
     .socials {
-        padding-left: 0;
+      margin-top: 80px;
+      padding-left: 0;
     }
 }
-
+.footer-actions>div>p:hover , .socials >img:hover{
+    cursor: pointer;
+    color: var(--color-primary-Cyan);
+}
