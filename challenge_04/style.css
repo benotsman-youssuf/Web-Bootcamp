@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope:wght@200..800&display=swap');
+:root {
+  --color-primary-light-green: hsl(193, 38%, 86%);
+  --color-primary-neon-green: hsl(150, 100%, 66%);
+  --color-neutral-grayish-blue: hsl(217, 19%, 38%);
+  --color-neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+  --color-neutral-dark-blue: hsl(218, 23%, 16%);
+  --font-size: 28px;
+  --font-weight: 800;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-neutral-dark-blue);
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  max-width: 540px;
+  min-height: 332px;
+  background-color: var(--color-neutral-dark-grayish-blue);
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+.txt q {
+  font-weight: var(--font-weight);
+  font-size: 30px;
+  color: var(--color-primary-light-green);
+}
+.txt h4 {
+  color: var(--color-primary-neon-green);
+  margin-bottom: -15px;
+  letter-spacing: 4px;
+}
+.click button {
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-primary-neon-green);
+  cursor: pointer;
+}
+.click{
+    margin-top: -30px;
+}
+@media (max-width: 450px){
+    main img{
+        content: url(./images/pattern-divider-mobile.svg);
+    }
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.297);
+    }
+}
