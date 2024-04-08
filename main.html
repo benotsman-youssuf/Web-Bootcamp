@@ -4,24 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Development Challenges</title>
-    <link rel="stylesheet" href="./style.css">
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(
+          45deg,
+          hsl(197, 37%, 24%),
+          hsl(173, 58%, 39%)
+        );
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        animation: gradientAnimation 10s ease infinite;
+      }
+
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .container {
+        max-width: 800px;
+        padding: 40px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        text-align: center;
+        animation: fadeIn 1s ease;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: hsl(173, 58%, 39%);
+        text-shadow: 2px 2px 4px rgba(109, 179, 116, 0.5);
+      }
+
+      ol {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 20px;
+      }
+
+      a {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: hsl(197, 37%, 24%);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        font-size: 18px;
+        box-shadow: 0 4px 8px rgba(35, 57, 77, 0.5);
+      }
+
+      a:hover {
+        background-color: hsla(199, 38%, 23%, 0.541);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 16px rgba(35, 57, 77, 0.5);
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <h1>Infobrains Challenges</h1>
+      <h1>All Web Dev Challenges</h1>
       <ol>
-        <li><a href="./challenge_01/index.html">Challenge 1</a></li>
-        <li><a href="./challenge_02/index.html">Challenge 2</a></li>
-        <li><a href="./challenge_03/index.html">Challenge 3</a></li>
-        <li><a href="./challenge_04/index.html">Challenge 4</a></li>
+        <li><a href="./challenge_01/index.html">Challenge 01</a></li>
+        <li><a href="./challenge_02/index.html">Challenge 02</a></li>
+        <li><a href="./challenge_03/index.html">Challenge 03</a></li>
+        <li><a href="./challenge_04/index.html">Challenge 04</a></li>
       </ol>
-      <h1>My extra Projects</h1>
+      <h1>Some Extra Projects</h1>
       <ol>
         <li><a href="./extra/QrCode/index.html">QR Code Card</a></li>
-        <li><a href="./extra/iphone/index.html">ios UI</a></li>
-        <li><a href="./extra/flip-card/index.html">Flip Card</a></li>
+        <li><a href="./extra/iphone/index.html">Iphone UI</a></li>
       </ol>
     </div>
   </body>
 </html>
-
