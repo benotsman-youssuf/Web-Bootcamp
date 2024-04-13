@@ -1,0 +1,74 @@
+:root{
+    --color-primary : linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    --color-neutral-PaleBlue: hsl(243, 100%, 93%);
+    --color-neutral-GrayishBlue: hsl(229, 7%, 55%);
+    --color-neutral-DarkBlue: hsl(228, 56%, 26%);
+    --color-neutral-VeryDarkBlue: hsl(229, 57%, 11%);
+
+    --font-famil: 'Raleway', sans-serif;
+    --font-size: 14px
+    --font-weights-semi:400;
+    --font-weights-bold:700;
+}
+body{
+    font-family: var(--font-famil);
+    font-size: var(--font-size);
+    background-color: var(--color-neutral-VeryDarkBlue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This makes sure the body takes up the full viewport height */
+}
+.container{
+    display: flex;
+    align-items: end;
+    gap: 40px;
+}
+.logo{
+    width: 10px;
+}
+.fylo{
+    background-color: var(--color-neutral-DarkBlue);
+    border-radius: 15px 100px 15px 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+    padding-right: 150px;
+}
+.icons{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.icons > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-neutral-VeryDarkBlue);
+    border-radius: 15px;
+
+}
+
+.range-slider {
+    background-color: var(--color-neutral-DarkBlue);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#rangeSlider{
+    width: 600px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: var(--color-primary);
+    border-radius: 10px;
+}
+input{
+    
+}
