@@ -5,13 +5,15 @@
     --color-neutral-DarkBlue: hsl(228, 56%, 26%);
     --color-neutral-VeryDarkBlue: hsl(229, 57%, 11%);
 
-    --font-famil: 'Raleway', sans-serif;
+    --font-family: 'Raleway', sans-serif;
     --font-size: 14px
     --font-weights-semi:400;
     --font-weights-bold:700;
 }
+
+/* General Styles */
 body{
-    font-family: var(--font-famil);
+    font-family: var(--font-family);
     font-size: var(--font-size);
     background-color: var(--color-neutral-VeryDarkBlue);
 
@@ -20,14 +22,20 @@ body{
     align-items: center;
     height: 100vh; /* This makes sure the body takes up the full viewport height */
 }
+
+/* Layout */
 .container{
     display: flex;
     align-items: end;
     gap: 40px;
 }
+
+/* Logo */
 .logo{
-    width: 10px;
+    width: 10px; 
 }
+
+/* Main Content */
 .fylo{
     background-color: var(--color-neutral-DarkBlue);
     border-radius: 15px 100px 15px 15px;
@@ -38,6 +46,8 @@ body{
     padding: 50px;
     padding-right: 150px;
 }
+
+/* Icons */
 .icons{
     display: flex;
     gap: 30px;
@@ -56,19 +66,79 @@ body{
 
 }
 
+/* Range Slider */
 .range-slider {
     background-color: var(--color-neutral-DarkBlue);
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
 }
-#rangeSlider{
+
+#slider{
+    display: flex;
+    align-items: center;
+    justify-content: left;
     width: 600px;
     height: 20px;
-    -webkit-appearance: none;
+    border-radius: 10px;
+    background-color: var(--color-neutral-VeryDarkBlue);
+    position: relative;
+    padding-left:3px ;
+}
+#bar{
+    width: 400px;
+    height: 14px;
     background: var(--color-primary);
     border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+    animation: slideBall 3s ease-out forwards;
 }
-input{
-    
+@keyframes slideBall {
+    0% {
+      width: 0px;
+    }
+    100% {
+     width: 400px;
+    }
+  }
+#ball{
+    width: 14px;
+    height: 14px;
+    border-radius: 10px;
+    background-color:white;
+    position: absolute;
+    right: 0;
+}
+
+/* Storage Info */
+.line{
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 30px 60px 30px;
+    color: aliceblue;
+    font-size: 19px;
+}
+#line-info{
+    font-weight: var(--font-weights-bold);
+    display: flex;
+    gap: 500px;
+}
+strong{
+    font-size: 45px;
+    font-weight: 1000;
+}
+#storage-left{
+    position: relative;
+    font-weight: var(--font-weights-bold);
+    padding: 20px;
+    background-color: white;
+    width: 170px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: -35px;
+    margin-left: 420px;
 }
