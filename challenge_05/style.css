@@ -37,6 +37,31 @@ body {
     flex-direction: column;
     gap: 40px;
     padding: 60px 150px 60px 60px;
+    box-shadow: 34px 42px 100px hsla(229, 57%, 11%, 0.89);
+    animation: fylo-ani 2s ease-in-out;
+}
+@keyframes fylo-ani {
+    0% {
+        opacity: 0;
+        transform: translateY(-130px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#second {
+    animation: sec-ani 2s ease-in-out;
+}
+@keyframes sec-ani {
+    0% {
+        opacity: 0;
+        transform: translateY(130px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .icons {
     display: flex;
@@ -52,9 +77,15 @@ body {
     height: 70px;
     background-color: var(--color-neutral-VeryDarkBlue);
     border-radius: 15px;
+    transition: all 0.3s ease-in;
 }
 .icons > div > img {
     height: 26px;
+}
+.icons > div:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 .range-slider {
     background-color: var(--color-neutral-DarkBlue);
@@ -67,21 +98,22 @@ body {
     align-items: center;
     justify-content: left;
     max-width: 600px;
-    height: 20px;
+    height: 22px;
     border-radius: 10px;
     background-color: var(--color-neutral-VeryDarkBlue);
     position: relative;
-    padding-left: 3px;
+    padding-left: 4px;
 }
 #bar {
     max-width: 400px;
-    height: 12px;
+    height: 14px;
     background: var(--color-primary);
     border-radius: 10px;
     position: absolute;
     cursor: pointer;
     animation: slideBall 3s ease-out forwards;
 }
+
 @keyframes slideBall {
     0% {
         width: 0px;
@@ -91,8 +123,8 @@ body {
     }
 }
 #ball {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-radius: 10px;
     background-color: white;
     position: absolute;
@@ -107,6 +139,7 @@ body {
     padding: 30px 30px 60px 30px;
     color: aliceblue;
     font-size: 19px;
+    box-shadow: 34px 42px 100px hsla(229, 57%, 11%, 0.89);
 }
 #line-info {
     font-weight: var(--font-weights-bold);
@@ -114,19 +147,32 @@ body {
     gap: 500px;
 }
 strong {
-    font-size: 45px;
-    font-weight: 1000;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: var(--font-family);
 }
 #storage-left {
     position: relative;
     font-weight: var(--font-weights-bold);
-    padding: 30px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     background-color: white;
-    max-width: 190px;
+    max-width: 150px;
     border-radius: 10px;
     text-align: center;
     margin-bottom: -35px;
-    margin-left: 400px;
+    margin-left: 440px;
+}
+#storage-left,
+#tri {
+    animation: storage-ani 1s ease-in-out infinite alternate;
+}
+@keyframes storage-ani {
+    0% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(2px);
+    }
 }
 #tri {
     width: 40px;
@@ -136,6 +182,10 @@ strong {
     margin-left: 560px;
     margin-top: -90px;
     clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+sup {
+    font-size: 1.2em;
+    color: var(--color-neutral-GrayishBlue);
 }
 @media screen and (max-width: 768px) {
     body {
@@ -168,11 +218,15 @@ strong {
     #line-info {
         display: flex;
         flex-direction: row;
-        gap: 200px;
+        gap: 170px;
     }
     #bar {
         max-width: 400px;
-        height: 12px;
+        height: 14px;
+    }
+    .line {
+        width: 270px;
+        text-align: center;
     }
     @keyframes slideBall {
         0% {
@@ -189,5 +243,6 @@ strong {
     }
     #storage-left {
         margin-top: -40px;
+        padding: 10px 25px 10px 25px;
     }
 }
