@@ -1,6 +1,5 @@
 const countElement = document.getElementById('number');
 let count = 0;
-
 // Function to update the count value
 function updateCount() {
   countElement.textContent = count;
