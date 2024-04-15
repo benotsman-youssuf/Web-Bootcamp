@@ -8,3 +8,4 @@ async function startCounting() {
   }
 }
 window.onload = startCounting;
+

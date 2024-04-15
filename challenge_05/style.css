@@ -9,6 +9,11 @@
     --font-weights-semi: 400;
     --font-weights-bold: 700;
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: var(--font-family);
     font-size: var(--font-size);
@@ -135,8 +140,8 @@ body {
     align-items: right;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
-    padding: 30px 30px 60px 30px;
+    gap: 20px;
+    padding: 50px 30px 60px 30px;
     color: aliceblue;
     font-size: 19px;
     box-shadow: 34px 42px 100px hsla(229, 57%, 11%, 0.89);
@@ -146,7 +151,7 @@ body {
     display: flex;
     gap: 500px;
 }
-strong {
+#number {
     font-size: 50px;
     font-weight: 900;
     font-family: var(--font-family);
@@ -154,13 +159,13 @@ strong {
 #storage-left {
     position: relative;
     font-weight: var(--font-weights-bold);
-    padding: 20px 20px 20px 20px;
+    padding: 10px 20px 10px 20px;
     background-color: white;
-    max-width: 150px;
+    max-width: 200px;
     border-radius: 10px;
     text-align: center;
-    margin-bottom: -35px;
-    margin-left: 440px;
+    margin-bottom: -30px;
+    margin-left: 430px;
 }
 #storage-left,
 #tri {
@@ -180,7 +185,7 @@ strong {
     background-color: white;
     position: absolute;
     margin-left: 560px;
-    margin-top: -90px;
+    margin-top: -135px;
     clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 sup {
@@ -225,7 +230,7 @@ sup {
         height: 14px;
     }
     .line {
-        width: 270px;
+        width: 330px;
         text-align: center;
     }
     @keyframes slideBall {
