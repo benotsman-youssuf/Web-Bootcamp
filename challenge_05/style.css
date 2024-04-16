@@ -89,8 +89,9 @@ body {
 }
 .icons > div:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
+    transform: scale(0.95);
     cursor: pointer;
+    box-shadow:inset 0px 0px 20px  black ;
 }
 .range-slider {
     background-color: var(--color-neutral-DarkBlue);
@@ -191,6 +192,17 @@ body {
 sup {
     font-size: 1.2em;
     color: var(--color-neutral-GrayishBlue);
+}
+#number{
+  font-size: 50px;
+  font-weight: 900;
+  color: #333;
+  
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.385);
+  
+}
+
+
 }
 @media screen and (max-width: 768px) {
     body {
